@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery UI examples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/jqueryui/css/jquery-ui.min.css">
+        <style>
+            .map {
+                width: 500px;
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="map"></div>
+
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/jqueryui/jquery-ui.min.js"></script>
+        <script src="js/libs/jquery-ui-map/min/jquery.ui.map.full.min.js"></script>
+
+        <script>
+            $(function() {
+                $(".map").gmap();
+                
+                /* gmap()のオプション例
+                {
+                    center: "35.6811031,139.766667",
+                    zoom: 14
+                }
+                */
+            });
+        </script>
+    </body>
+</html>
